@@ -12,6 +12,8 @@ Start with 10 companies, for each one we need
 
 ### Categorires we base Ethical Score On
 
+-------------------------------POSSIBLY HAVE TWO SEPERATE PARTS, WITH ESG AND MOST RECENT ACTIVITY------------------------------------------------------
+
 **Environmental**
 * Energy use (amount)
 * Renewable energy
