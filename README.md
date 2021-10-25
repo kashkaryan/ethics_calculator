@@ -13,6 +13,7 @@ Start with 10 companies, for each one we need
 ### Categorires we base Ethical Score On
 
 -------------------------------POSSIBLY HAVE TWO SEPERATE PARTS, WITH ESG AND MOST RECENT ACTIVITY------------------------------------------------------
+-------Give feedback to user, are they in the green by their own standards? How they can improve and where. Recommend some companies to them---------------------
 
 **Environmental**
 * Energy use (amount)
