@@ -17,7 +17,7 @@ Start with 10 companies, for each one we need
 
 -- Have number of bad events for each category!
 -- USE ML TO RECOMMEND STOCKS!! THINK ABOUT VALIDITY ERROR
-- INITIAL FILTER FOR PRIORITIES, THEN ML AND EARNING REPORTS ETC. FOR RECOMMENDATION
+- INITIAL FILTER FOR PRIORITIES, THEN ML AND EARNING REPORTS ETC. FOR RECOMMENDATION --------
 
 **Environmental**
 * Energy use (amount)
