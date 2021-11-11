@@ -3,15 +3,10 @@ const mongoose = require('mongoose')
 const { Schema, model } = mongoose
 
 const companyhasorg = new Schema({
-  // author: {
-  //   type: Schema.Types.ObjectId, ref: 'User', required: true,
-  // },
-  // comments: [{ type: Schema.Types.ObjectId, ref: 'Comment' }],
-
-  orgid: { type: Number },
-  orgname: { type: String },
-  tick: { type: String },
-  cusip: { type: String },
+  orgid: { type: Number, required: true },
+  orgname: { type: String, required: true },
+  tick: { type: String, required: true },
+  cusip: { type: String, required: true },
 })
 
 module.exports = model('company_has_org', companyhasorg)
