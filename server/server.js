@@ -8,6 +8,7 @@ const cors = require('cors')
 
 /** Import all routers below */
 const CompanyHasOrgRouter = require('./routes/company-has-org-router')
+const EsgScoreRouter = require('./routes/esg-score-router')
 
 // connect to the database
 const MONGO_URI = 'mongodb+srv://ethicsteam:Sb6PHZm7tv7YDC5n@cluster0.nxjub.mongodb.net/ethics-app?retryWrites=true&w=majority'
@@ -39,7 +40,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 // test to see if localhost:8080 works
 app.get('/', (_, res, next) => {
   try {
-    res.send('hello world')
+    res.send('welcome to ethical investor rest api')
   } catch (err) {
     next(err)
   }
@@ -49,6 +50,7 @@ app.get('/', (_, res, next) => {
 // app.use('/account', accountRouter)
 // app.use('/profile', profileRouter)
 app.use('/companyhasorg', CompanyHasOrgRouter)
+app.use('/esgscore', EsgScoreRouter)
 
 // app.get('*', (_req, res) => {
 //   res.sendFile(path.join(__dirname, '../client/build/index.html')) do not remove

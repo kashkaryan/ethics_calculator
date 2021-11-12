@@ -84,7 +84,7 @@ router.post('/', async (req, res, next) => {
     await CompanyHasOrg.create({
       orgid, orgname, tick, cusip,
     })
-    res.send('this companyorg is created successfully')
+    res.send(`this companyorg is created successfully with orgid: ${orgid} and company name ${orgname}`)
   } catch (err) {
     next(err)
   }
