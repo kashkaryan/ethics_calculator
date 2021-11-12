@@ -5,13 +5,19 @@ const bodyParser = require('body-parser')
 const cookieSession = require('cookie-session')
 const cors = require('cors')
 // const path = require('path') do not remove
+const {
+  ATLAS_ACCOUNT,
+  ATLAS_PASSWORD,
+  ATLAS_DB_NAME,
+  ATLAS_CLUSTER_NAME,
+} = require('./secret') // require the credentials for DB connection
 
 /** Import all routers below */
 const CompanyHasOrgRouter = require('./routes/company-has-org-router')
 const EsgScoreRouter = require('./routes/esg-score-router')
 
 // connect to the database
-const MONGO_URI = 'mongodb+srv://ethicsteam:Sb6PHZm7tv7YDC5n@cluster0.nxjub.mongodb.net/ethics-app?retryWrites=true&w=majority'
+const MONGO_URI = `mongodb+srv://${ATLAS_ACCOUNT}:${ATLAS_PASSWORD}@${ATLAS_CLUSTER_NAME}.nxjub.mongodb.net/${ATLAS_DB_NAME}?retryWrites=true&w=majority`
 mongoose.connect(MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
